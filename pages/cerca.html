@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pàgina de resultats de cerca de la base de dades de Cuidatge">
     <meta name="keywords" content="base de dades, revistes, articles, infermeria, URV, CRAI">
+    <meta name="author" content="URV">
 
     <title>Cuidatge | Resultats de cerca</title>
 
@@ -18,250 +19,63 @@
 </head>
 
 <body>
+ 
 
     <header>
-        <div class="logo-escriptori-URV">
-            <a href="https://www.urv.cat/ca/" title="URV"><img src="../images/logo-urv-nav.png" alt="Universitat Rovira i Virgili"></a>
-        </div>
-        <div class="topbar">
-            <div class="logotip-URV">
-                <a href="https://www.urv.cat/ca/"><img src="../images/logo-urv-blanc-2017.png" alt="Universitat Rovira i Virgili"></a>
-            </div>
-        </div>
-        <div class="downbar">
-            <div class="logotip-cuidatge">
-                <a href="../index.html" title="Portada | Cuidatge"><img src="../images/logotip-cuidatge.png" alt="Cuidatge"></a>
-            </div>
-        </div>
+        <!-- Tu código del encabezado aquí -->
     </header>
 
     <main>
 
-        <div class="motor-de-cerca">
-            <h1>Cercador Cuidatge</h1>
-            <div class="cercador">
-                <form action="#" method="post">
-                <input id="cercar" type="search" placeholder="Cercar">
-                <label for="cercar">
-                    <a href="../pages/cerca.html"><img src="../images/lupa.svg" alt="Lupa"></a>
-                </label>
-                </form>
-                <a class="cerca-avançada" href="#">Cerca avançada</a>
+        <!-- Tu código de la barra de búsqueda aquí -->
+
+        <!-- Sección para mostrar los resultados de la búsqueda -->
+        <div class="resultados-cerca">
+            <h1>Resultats de la cerca</h1>
+            <div id="resultados"> <!-- Aquí se mostrarán los resultados -->
             </div>
-        </div>
-
-        <!-- Menú dispositius mòbils -->
-        <article>
-            <ul id="menu-base-de-dades">
-                <li><a href="#" title="Refinar els teus resultats">Refinar els teus resultats</a></li>
-                <li><a href="#" title="Presentació del resultats">Presentació dels resultats</a></li>
-                <li><a href="#" title="Instruccions de cerca">Instruccions de cerca</a></li>
-            </ul>
-        </article>
-        <!--./Menú dispositius mòbils -->
-
-        <div class="base-de-dades">
-            <article class="filtres">
-                <h1>Refinar els teus resultats</h1>
-                    <h2>Disponibilitat</h2>
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox1" value="primer-checkbox">
-                                <label for="cbox1">Disponible en línia</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="cbox2" value="segon-checkbox">
-                                <label for="cbox2">Disponible al CRAI</label>
-                            </li>
-                        </ul>
-                    <h2>Data de publicació</h2>
-                        <h3>Des de - Fins a</h3>
-                            <ul>
-                                <li>
-                                    <input type="checkbox" value="tercer-checkbox">
-                                    <label for="cbox3">
-                                        <input type="date" id="cbox3">
-                                    </label>
-                                    <label for="cbox-3">
-                                        <input type="date" id="cbox-3">
-                                    </label>
-                                </li>
-                            </ul>
-                    <h2>Autor</h2>
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox4" value="quart-checkbox">
-                                <label for="cbox4">Autor 1</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="cbox5" value="cinque-checkbox">
-                                <label for="cbox5">Autor 2</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="cbox6" value="sise-checkbox">
-                                <label for="cbox6">Autor 3</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="cbox7" value="sete-checkbox">
-                                <label for="cbox7">Autor 4</label>
-                            </li>
-                        </ul>
-                    <h2>Títol revista</h2>
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox8" value="vuite-checkbox">
-                                <label for="cbox8">Revista 1</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="cbox9" value="nove-checkbox">
-                                <label for="cbox9">Revista 2</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="cbox10" value="dese-checkbox">
-                                <label for="cbox10">Revista 3</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="cbox11" value="onze-checkbox">
-                                <label for="cbox11">Revista 4</label>
-                            </li>
-                        </ul>
-                    <h2>Instruccions de cerca</h2>
-                        <ul>
-                            <li>AND: *</li>
-                            <li>OR: +</li>
-                            <li>NOT: ^</li>
-                            <li>Truncament: $</li>
-                        </ul>
-            </article>
-
-            <article class="resultats">
-
-                <div class="presentacio-resultats">
-                    <h1>Presentació de resultats</h1>
-                    <div class="grup">
-                        <label for="area-1" class="form-label"></label>
-                        <select id="area-1" class="form-control" name="referencies">
-                            <option value="-1">Resultats per pàgina</option>
-                            <option value="1">10</option>
-                            <option value="2">25</option>
-                            <option value="3">50</option>
-                        </select>	
-                    </div>
-                    <div class="grup">
-                        <label for="area-2" class="form-label"></label>
-                        <select id="area-2" class="form-control" name="informacio">
-                            <option value="-1">Tipus d'informació</option>
-                            <option value="1">Títol</option>
-                            <option value="2">Autor</option>
-                            <option value="3">Revista</option>
-                            <option value="4">Disponibilitat</option>
-                        </select>	
-                    </div>
-                    <div class="grup">
-                        <label for="area-3" class="form-label"></label>
-                        <select id="area-3" class="form-control" name="ordre">
-                            <option value="-1">Ordenat per</option>
-                            <option value="1">Data - El més nou</option>
-                            <option value="2">Data - La més antiga</option>
-                            <option value="3">Títol</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="resultats-cerca">
-                    <h1>Resultats de la cerca</h1>
-                    <div class="primer-resultat-cerca">
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox12" value="dotze-checkbox">
-                                <label for="cbox12">Títol:</label>
-                                <a href="./fitxa-bibliografica-1.html" title="Pàgina de la fitxa bibliogràfica de l'article">Motivación de las personas con diabetes mellitus tipo 2 en la realización de una dieta saludable</a>
-                            </li>
-                            <li>Autor: Gonzalez Mendez X, Papin Cano C, Martin Payo R</li>
-                            <li>Revista: RIDEC</li>
-                            <li>Disponibilitat: Disponible en línia</li>
-                        </ul>
-                    </div>
-                    <div class="segon-resultat-cerca">
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox13" value="tretze-checkbox">
-                                <label for="cbox13">Títol: </label>
-                                <a href="./fitxa-bibliografica-2.html" title="Pàgina de la fitxa bibliogràfica de l'article">Beneficios de la dieta cetogénica en la enfermedad de McArdle: empoderando a un paciente</a>
-                            </li>
-                            <li>Autor: Nafría Soria H, Campos del Portillo R, Moreno España J</li>
-                            <li>Revista: METAS DE ENFERMERIA</li>
-                            <li>Disponibilitat: Disponible al CRAI</li>
-                        </ul>
-                    </div>
-                    <div class="tercer-resultat-cerca">
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox14" value="catorze-checkbox">
-                                <label for="cbox14">Títol: </label>
-                                <a href="./fitxa-bibliografica-3.html" title="Pàgina de la fitxa bibliogràfica de l'article">Projecte de millora d'activitat física i hàbits alimentaris als residents del centre d'acolliment de "La SOPA"</a>
-                            </li>
-                            <li>Autor: Julià Camps A, Saura González N, Alfranca Pardillos R, Salvans Sagué M, Ferrer Morell N, Frou Llenas I, [et al.]</li>
-                            <li>Revista: AGORA D'INFERMERIA</li>
-                            <li>Disponibilitat: Disponible al CRAI</li>
-                        </ul>
-                    </div>
-                    <div class="quart-resultat-cerca">
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox15" value="quinze-checkbox">
-                                <label for="cbox15">Títol: </label>
-                                <a href="./fitxa-bibliografica-4.html" title="Pàgina de la fitxa bibliogràfica de l'article">Ayuno postquirúrgico en cirugía mayor abdominal electiva con bases en medicina basada en evidencias</a>
-                            </li>
-                            <li>Autor: Escalona Rabaza M, García Orozco L, González Aguilar V, García Boyx G, Proaño Ramón S, Santillán Pilca GR, [et al.]</li>
-                            <li>Revista: ENFERMERIA INVESTIGA</li>
-                            <li>Disponibilitat: Disponible en línia</li>
-                        </ul>
-                    </div>
-                    <div class="cinque-resultat-cerca">
-                        <ul>
-                            <li>
-                                <input type="checkbox" id="cbox16" value="setze-checkbox">
-                                <label for="cbox16">Títol:</label>
-                                <a href="./fitxa-bibliografica-5.html" title="Pàgina de la fitxa bibliogràfica de l'article">Análisis de la adherencia a la dieta mediterránea y de los consejos nutricionales recibidos durante el embarazo</a>
-                            </li>
-                            <li>Autor: Cantero Izquierdo A, Pelado García EM, Sanchez Domingo M</li>
-                            <li>Revista: NURE INVESTIGACION</li>
-                            <li>Disponibilitat: Disponible en línia</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <nav class="numero-pagines">
-                    <ul>
-                        <li><a href="#"><img src="../images/fletxa-esquerra.svg" alt="Fletxa esquerra"></a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#"><img src="../images/fletxa-dreta.svg" alt="Fletxa dreta"></a></li>
-                    </ul>
-                </nav>
-
-            </article>
         </div>
     </main>
 
     <footer>
-
-        <div class="logo-CRAI">
-            <a href="https://www.crai.urv.cat/ca/" title="Lloc web del CRAI URV"><img src="../images/logotip-CRAI-blanc.png" alt="Logotip del CRAI"></a>
-        </div>
-
-        <div class="informacio">
-            <div class="contacte">
-                <p><abbr title="Centre de Recursos per a l'Aprenentatge i la Investigació">CRAI</abbr> campus Catalunya</p>
-                <p>Av. Catalunya, 35 - 43002 Tarragona</p>
-                <p>Tel. 977559524 - crai.catalunya@urv.cat</p>
-            </div>
-        </div>
-
+        <!-- Tu código del pie de página aquí -->
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        // Esta función mostrará los resultados de la búsqueda en la página
+        function mostrarResultados(data) {
+            const resultadosDiv = $('#resultados');
+            resultadosDiv.empty(); // Limpiar resultados anteriores
+            data.forEach(libro => {
+                const li = $('<li>');
+                li.text(libro.titulo + ' - ' + libro.autor); // Ajusta la visualización según la estructura de tus datos
+                resultadosDiv.append(li);
+            });
+        }
+
+        // Esta es tu función de búsqueda modificada para manejar la respuesta del servidor
+        $(document).ready(function() {
+            $('#formulario-busqueda').submit(function(event) {
+                event.preventDefault(); // Evitar el envío del formulario por defecto
+                
+                const terminoBusqueda = $('#cercar').val();
+                if (!terminoBusqueda) {
+                    alert('Por favor, ingresa un término de búsqueda');
+                    return;
+                }
+
+                // Realizar la solicitud al servidor Node.js
+                $.get('/buscar-libros', { q: terminoBusqueda })
+                    .done(function(data) {
+                        mostrarResultados(data);
+                    })
+                    .fail(function(error) {
+                        console.error('Error al buscar libros:', error);
+                    });
+            });
+        });
+    </script>
 </body>
 
 </html>
