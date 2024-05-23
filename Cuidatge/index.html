@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Treball Final del Grau en Tècniques d'Interacció Digital i Multimèdia de la UOC">
+    <meta name="keywords" content="base de dades, revistes, articles, infermeria, URV, CRAI">
+
+    <title>Cuidatge | Referències bibliogràfiques en Infermeria</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/estils.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-escriptori-URV">
+            <a href="https://www.urv.cat/ca/" title="URV"><img src="./images/logo-urv-nav.png" alt="Universitat Rovira i Virgili"></a>
+        </div>
+        <div class="topbar">
+            <div class="logotip-URV">
+                <a href="https://www.urv.cat/ca/"><img src="./images/logo-urv-blanc-2017.png" alt="Universitat Rovira i Virgili"></a>
+            </div>
+        </div>
+        <div class="downbar">
+            <div class="logotip-cuidatge">
+                <a href="./index.html" title="Portada | Cuidatge"><img src="./images/logotip-cuidatge.png" alt="Cuidatge"></a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <article class="presentacio">
+            <!-- Carrusel -->
+            <div class="carrusel">
+                <div class="conteCarrusel">
+                    <div class="itemCarrusel" id="itemCarrusel-1">
+                        <div class="itemCarruselTarjeta">
+                            <img src="./images/revista-rol.jpeg" alt="Portada de la revista Rol de enfermeria">
+                        </div>
+                        <div class="itemCarruselFletxes">
+                            <a href="#itemCarrusel-3"><img src="./images/fletxa-esquerra-gris.svg" alt="Fletxa esquerra"></a>
+                            <a href="#itemCarrusel-2"><img src="./images/fletxa-dreta-gris.svg" alt="Fletxa dreta"></a>
+                        </div>
+                    </div>
+                    <div class="itemCarrusel" id="itemCarrusel-2">
+                        <div class="itemCarruselTarjeta">
+                            <img src="./images/RIDEC.jpeg" alt="Portada de la revista RIDEC">
+                        </div>
+                        <div class="itemCarruselFletxes">
+                            <a href="#itemCarrusel-1"><img src="./images/fletxa-esquerra-gris.svg" alt="Fletxa esquerra"></a>
+                            <a href="#itemCarrusel-3"><img src="./images/fletxa-dreta-gris.svg" alt="Fletxa dreta"></a>
+                        </div>
+                    </div>
+                    <div class="itemCarrusel" id="itemCarrusel-3">
+                        <div class="itemCarruselTarjeta">
+                            <img src="./images/enfermeria-vascular.png" alt="Portada de la revista Enfermeria vascular">
+                        </div>
+                        <div class="itemCarruselFletxes">
+                            <a href="#itemCarrusel-2"><img src="./images/fletxa-esquerra-gris.svg" alt="Fletxa esquerra"></a>
+                            <a href="#itemCarrusel-1"><img src="./images/fletxa-dreta-gris.svg" alt="Fletxa dreta"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="conteCarruselController">
+                    <a href="#itemCarrusel-1">•</a>
+                    <a href="#itemCarrusel-2">•</a>
+                    <a href="#itemCarrusel-3">•</a>
+                </div>
+            </div>
+            <!--./Carrusel -->
+            <div class="descripcio">
+                <h1>Descripció de la base de dades</h1>
+                <p>Cuidatge és una base de dades bibliogràfica produïda pel CRAI Campus Catalunya de la Universitat Rovira i Virgili, l'objectiu de la qual és donar a conèixer la producció científica produïda en l'àmbit de la infermeria i disciplines afins.</p>
+                <p>Conté més de 50.000 referències bibliogràfiques de les revistes publicades en català i castellà des del 1993, any en què es va crear la base de dades, fins a l'actualitat.</p>
+                <p>Aquesta base de dades conté referències bibliogràfiques de les publicacions periòdiques que es reben a la biblioteca, es buiden exhaustivament els títols de revista específics d'infermeria, i les de l'àmbit de la salut que es consideren més rellevants.</p>
+            </div>
+        </article>
+        
+        <div class="motor-de-cerca">
+            <h1>Cercador Cuidatge</h1>
+            <div class="cercador">
+                <form action="#" method="post">
+                <input id="cercar" type="search" placeholder="Cercar">
+                <label for="cercar">
+                    <a href="./pages/cerca.html"><img src="./images/lupa.svg" alt="Lupa"></a>
+                </label>
+                </form>
+                <a class="cerca-avançada" href="#">Cerca avançada</a>
+            </div>
+        </div>
+
+        <section class="instruccions-cerca">
+            <h1>Instruccions de cerca</h1>
+            
+            <article>
+                <h2>Ús operadors booleans</h2>
+                <div class="booleans">
+                <ul>
+                    <li>AND: dieta * diabetis o bé dieta and diabetis.</li>
+                    <li>OR: infants + adolescencia o bé infants or adolescencia.</li>
+                    <li>NOT: dieta ^ diabetis si busquem articles sobre dieta però no per a diabètics.</li>
+                </ul>
+                <img src="./images/operadors-booleans.png" alt="Operadors booleans">
+                </div>
+            </article>
+
+            <article>
+                <h2>Truncaments</h2>
+                <div class="truncaments">
+                <ul>
+                    <li>Paraules: Immigr$ (recuperació dels conceptes immigrants, immigració, etc.).</li>
+                    <li>Autors: Alberdi$ (Rosa M. Alberdi).</li>
+                </ul>
+                <img src="./images/truncaments.png" alt="Truncaments">
+                </div>
+            </article>
+        
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="logo-CRAI">
+            <a href="https://www.crai.urv.cat/ca/" title="Lloc web del CRAI URV"><img src="./images/logotip-CRAI-blanc.png" alt="Logotip del CRAI"></a>
+        </div>
+
+        <div class="informacio">
+            <div class="contacte">
+                <p><abbr title="Centre de Recursos per a l'Aprenentatge i la Investigació">CRAI</abbr> campus Catalunya</p>
+                <p>Av. Catalunya, 35 - 43002 Tarragona</p>
+                <p>Tel. 977559524 - crai.catalunya@urv.cat</p>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
